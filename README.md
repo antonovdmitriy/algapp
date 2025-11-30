@@ -1,7 +1,7 @@
 # Älg - Swedish Language Learning App
 
 <div align="center">
-  <img src="Media.xcassets/AppIcon.appiconset/image4.png" alt="Älg App Icon" width="120" height="120">
+  <img src="image.png" alt="Älg App Icon" width="120" height="120">
   
   **A modern iOS app for learning Swedish vocabulary**
   
