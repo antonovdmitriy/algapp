@@ -35,32 +35,6 @@
             background: var(--dark);
         }
 
-        /* Custom Cursor */
-        .cursor {
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--primary);
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            transition: all 0.15s ease;
-            transform: translate(-50%, -50%);
-        }
-
-        .cursor-follower {
-            width: 40px;
-            height: 40px;
-            background: var(--primary);
-            opacity: 0.2;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9998;
-            transition: all 0.3s ease;
-            transform: translate(-50%, -50%);
-        }
-
         /* Hero Section - Advanced */
         .hero {
             min-height: 100vh;
@@ -752,7 +726,6 @@
             .app-icon-3d { width: 150px; height: 150px; }
             .app-icon-container { width: 150px; height: 150px; }
             .final-cta h2 { font-size: 2.5em; }
-            .cursor, .cursor-follower { display: none; }
             .gallery-item { width: 280px; }
         }
 
@@ -770,10 +743,6 @@
     </style>
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="gradient-bg"></div>
@@ -1001,20 +970,6 @@
     </footer>
 
     <script>
-        // Custom Cursor
-        const cursor = document.querySelector('.cursor');
-        const follower = document.querySelector('.cursor-follower');
-
-        document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-
-            setTimeout(() => {
-                follower.style.left = e.clientX + 'px';
-                follower.style.top = e.clientY + 'px';
-            }, 100);
-        });
-
         // 3D App Icon Effect
         const iconContainer = document.querySelector('.app-icon-container');
         const icon = document.querySelector('.app-icon-3d');
@@ -1052,19 +1007,6 @@
         });
 
         reveals.forEach(reveal => revealObserver.observe(reveal));
-
-        // Hover effect for interactive elements
-        document.querySelectorAll('a, .bento-item, .feature-card, .testimonial-card').forEach(el => {
-            el.addEventListener('mouseenter', () => {
-                cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
-                follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            });
-
-            el.addEventListener('mouseleave', () => {
-                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-                follower.style.transform = 'translate(-50%, -50%) scale(1)';
-            });
-        });
     </script>
 </body>
 </html>
