@@ -51,11 +51,11 @@
 
 - **2,852 Swedish Words**: Comprehensive vocabulary database with CEFR levels
 - **62 Categories**: Organized by themes (Food, Travel, Business, Science, Workshop, etc.)
-- **30,292 Examples**: Contextual usage examples with 99.5% coverage
+- **30,292 Examples**: Contextual usage examples
 - **5,437 Word Forms**: Grammatical inflections and variations
-- **21 Languages**: Multi-language translation support (100% coverage)
+- **21 Languages**: Multi-language translation support
 - **4 TTS Voices**: Multiple Swedish and multilingual Azure neural voices with cloud-based previews
-- **100% Audio Coverage**: All words have pronunciation audio
+- **100% Audio**: All words have pronunciation audio
 
 
 ## 📞 Support & Contact
