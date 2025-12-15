@@ -620,6 +620,74 @@
             font-weight: 600;
         }
 
+        /* Languages Section */
+        .languages-section {
+            padding: 150px 20px;
+            background: linear-gradient(180deg, var(--dark) 0%, #1a1a2e 100%);
+            position: relative;
+        }
+
+        .languages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 80px auto 0;
+        }
+
+        .language-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            padding: 25px 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .language-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .language-card:hover::before {
+            left: 100%;
+        }
+
+        .language-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(102, 126, 234, 0.3);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .language-flag {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            display: block;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+        }
+
+        .language-name {
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .language-native {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+        }
+
         /* Final CTA - Bold */
         .final-cta {
             padding: 180px 20px;
@@ -944,6 +1012,122 @@
                 <div class="stat-card reveal">
                     <span class="stat-number">21</span>
                     <span class="stat-label">Languages</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="languages-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Learn Your Way</div>
+                <h2 class="section-title" style="color: white;">21 Languages Available</h2>
+                <p class="section-description" style="color: rgba(255, 255, 255, 0.6);">Learn Swedish from your native language with full translation support</p>
+            </div>
+
+            <div class="languages-grid">
+                <div class="language-card reveal">
+                    <span class="language-flag">🇬🇧</span>
+                    <div class="language-name">English</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇷🇺</span>
+                    <div class="language-name">Russian</div>
+                    <div class="language-native">Русский</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇺🇦</span>
+                    <div class="language-name">Ukrainian</div>
+                    <div class="language-native">Українська</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇸🇦</span>
+                    <div class="language-name">Arabic</div>
+                    <div class="language-native">العربية</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇮🇷</span>
+                    <div class="language-name">Persian</div>
+                    <div class="language-native">فارسی</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇸🇴</span>
+                    <div class="language-name">Somali</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇪🇸</span>
+                    <div class="language-name">Spanish</div>
+                    <div class="language-native">Español</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇩🇪</span>
+                    <div class="language-name">German</div>
+                    <div class="language-native">Deutsch</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇫🇷</span>
+                    <div class="language-name">French</div>
+                    <div class="language-native">Français</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇵🇱</span>
+                    <div class="language-name">Polish</div>
+                    <div class="language-native">Polski</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇮🇩</span>
+                    <div class="language-name">Indonesian</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇮🇳</span>
+                    <div class="language-name">Hindi</div>
+                    <div class="language-native">हिन्दी</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇨🇳</span>
+                    <div class="language-name">Chinese</div>
+                    <div class="language-native">中文</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇮🇹</span>
+                    <div class="language-name">Italian</div>
+                    <div class="language-native">Italiano</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇹🇷</span>
+                    <div class="language-name">Turkish</div>
+                    <div class="language-native">Türkçe</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇷🇸</span>
+                    <div class="language-name">Serbian</div>
+                    <div class="language-native">Српски</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇫🇮</span>
+                    <div class="language-name">Finnish</div>
+                    <div class="language-native">Suomi</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇪🇪</span>
+                    <div class="language-name">Estonian</div>
+                    <div class="language-native">Eesti</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇧🇾</span>
+                    <div class="language-name">Belarusian</div>
+                    <div class="language-native">Беларуская</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇱🇻</span>
+                    <div class="language-name">Latvian</div>
+                    <div class="language-native">Latviešu</div>
+                </div>
+                <div class="language-card reveal">
+                    <span class="language-flag">🇱🇹</span>
+                    <div class="language-name">Lithuanian</div>
+                    <div class="language-native">Lietuvių</div>
                 </div>
             </div>
         </div>
