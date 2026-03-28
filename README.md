@@ -7,6 +7,8 @@
   
   [![Download on the App Store](https://img.shields.io/badge/Download_on_the-App_Store-black?style=for-the-badge&logo=apple&logoColor=white)](https://apps.apple.com/se/app/%C3%A4lg-learn-swedish-words/id6746169818?l=en-GB)
 
+  🌐 **Website:** [antonovdmitriy.github.io/algapp](https://antonovdmitriy.github.io/algapp/)
+
 </div>
 
 ## 📱 About
