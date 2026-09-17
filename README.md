@@ -51,12 +51,12 @@
 
 ## 📊 App Statistics
 
-- **2,852 Swedish Words**: Comprehensive vocabulary database with CEFR levels
-- **62 Categories**: Organized by themes (Food, Travel, Business, Science, Workshop, etc.)
-- **30,292 Examples**: Contextual usage examples
-- **5,437 Word Forms**: Grammatical inflections and variations
+- **4,286 Swedish Words**: Comprehensive vocabulary database with CEFR levels
+- **67 Categories**: Organized by themes (Food, Travel, Business, Science, Workshop, etc.)
+- **44,660 Examples**: Contextual usage examples
+- **8,549 Word Forms**: Grammatical inflections and variations
 - **21 Languages**: Multi-language translation support
-- **4 TTS Voices**: Multiple Swedish and multilingual Azure neural voices with cloud-based previews
+- **6 TTS Voices**: Native Swedish and multilingual neural voices with cloud-based previews
 - **100% Audio**: All words have pronunciation audio
 
 
