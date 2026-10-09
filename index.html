@@ -388,6 +388,80 @@
                 0 0 0 1px rgba(102, 126, 234, 0.5);
         }
 
+        /* Stories Section */
+        .stories-section {
+            padding: 150px 20px;
+            background: #1a1a2e;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stories-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .stories-phones {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .stories-phones img {
+            width: 300px;
+            max-width: 45%;
+            height: auto;
+            border-radius: 30px;
+            box-shadow:
+                0 30px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+
+        .stories-phones img:nth-child(2) {
+            margin-top: 80px;
+        }
+
+        .stories-steps {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+
+        .stories-steps li {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .stories-step-icon {
+            flex: 0 0 auto;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7em;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .stories-steps h3 {
+            font-size: 1.5em;
+            color: white;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .stories-steps p {
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
         /* Features Grid - Modern Cards */
         .features-section {
             padding: 150px 20px;
@@ -578,7 +652,7 @@
 
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 40px;
             max-width: 1000px;
             margin: 80px auto 0;
@@ -804,6 +878,8 @@
             .app-icon-container { width: 150px; height: 150px; }
             .final-cta h2 { font-size: 2.5em; }
             .gallery-item { width: 280px; }
+            .stories-layout { grid-template-columns: 1fr; gap: 60px; }
+            .stories-phones img:nth-child(2) { margin-top: 40px; }
         }
 
         /* Scroll Reveal */
@@ -881,33 +957,85 @@
                         <img src="images/03_word_juli.png" alt="Word Card with Image">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/04_word_light_bg.png" alt="Word Card Light">
+                        <img src="images/06_story_list.png" alt="Stories">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/10_profile_main.png" alt="Profile &amp; Progress">
+                        <img src="images/story_detail.png" alt="Story with Text and Audio">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/12_profile_statistics.png" alt="Statistics">
+                        <img src="images/05_ai_chat.png" alt="Älg AI Assistant">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/11_profile_calendar.png" alt="Learning Calendar">
+                        <img src="images/04_pronunciation.png" alt="Pronunciation Training">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/05_player.png" alt="Player Mode">
+                        <img src="images/07_player.png" alt="Player Mode">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/06_matching_game.png" alt="Matching Game">
+                        <img src="images/08_matching_game.png" alt="Matching Game">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/07_snake_game.png" alt="Word Snake Game">
+                        <img src="images/snake_game.png" alt="Word Snake Game">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/08_en_ett_game.png" alt="En/Ett Game">
+                        <img src="images/en_ett_game.png" alt="En/Ett Game">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/09_dictionary.png" alt="Dictionary">
+                        <img src="images/dictionary.png" alt="Dictionary">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/09_profile.png" alt="Profile &amp; Progress">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories-section" id="stories">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Stories</div>
+                <h2 class="section-title">Read. Listen.<br>Understand.</h2>
+                <p class="section-description">101 short stories from everyday life in Sweden, from A1 to C1 — each one illustrated and read aloud by a Swedish narrator.</p>
+            </div>
+
+            <div class="stories-layout">
+                <div class="stories-phones reveal">
+                    <img src="images/06_story_list.png" alt="Story list with illustrated stories by level">
+                    <img src="images/story_detail.png" alt="A story with its illustration and text">
+                </div>
+
+                <ul class="stories-steps reveal">
+                    <li>
+                        <div class="stories-step-icon">📖</div>
+                        <div>
+                            <h3>Read at your level</h3>
+                            <p>Stories are grouped by CEFR level, so you start with simple A1 texts about fika and a trip to the market and work your way up.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stories-step-icon">🎧</div>
+                        <div>
+                            <h3>Listen at your pace</h3>
+                            <p>A native-sounding narrator reads every story. Beginner levels are read a little slower, and you can set the speed for each level yourself — or hide the text and train your ear.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stories-step-icon">👆</div>
+                        <div>
+                            <h3>Tap any word</h3>
+                            <p>Don't know a word? Tap it to see the translation in your language and open the full word card with forms and examples.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stories-step-icon">✅</div>
+                        <div>
+                            <h3>Check what you understood</h3>
+                            <p>Every story ends with a short quiz of 3–4 questions. Answer them all correctly to mark the story as completed.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -930,8 +1058,8 @@
 
                 <div class="feature-card reveal">
                     <div class="feature-icon-wrapper">🎯</div>
-                    <h3>Customizable Practice</h3>
-                    <p>Choose topics, difficulty levels, and learning pace. Mark words as learned, favorite, or hidden to create your perfect study path.</p>
+                    <h3>Fully Personalized</h3>
+                    <p>Choose topics, difficulty levels, and learning pace. Mark words as learned, favorite, or hidden, and pick the themes, voices, and daily goal that suit you.</p>
                 </div>
 
                 <div class="feature-card reveal">
@@ -959,15 +1087,21 @@
                 </div>
 
                 <div class="feature-card reveal">
-                    <div class="feature-icon-wrapper">🎨</div>
-                    <h3>Fully Personalized</h3>
-                    <p>Customize themes, voices, goals, and display options. Make Älg truly yours with extensive settings.</p>
-                </div>
-
-                <div class="feature-card reveal">
                     <div class="feature-icon-wrapper">📊</div>
                     <h3>Track Your Progress</h3>
                     <p>See your learning streak, daily goals, and CEFR level breakdown at a glance. A calendar view and activity chart show exactly how consistent your practice has been.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">✨</div>
+                    <h3>Älg AI Assistant</h3>
+                    <p>Ask anything about Swedish: why it's "en hund" and not "ett hund", the difference between "tala" and "prata", or what to focus on next. Älg AI knows your progress and answers in plain language.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">☁️</div>
+                    <h3>Sync Across Devices</h3>
+                    <p>Create a free account to back up your progress and pick up on any device where you left off. Signing in also unlocks Älg AI. No account needed for everything else.</p>
                 </div>
             </div>
         </div>
@@ -1018,6 +1152,10 @@
                 <div class="stat-card reveal">
                     <span class="stat-number">44,660</span>
                     <span class="stat-label">Examples</span>
+                </div>
+                <div class="stat-card reveal">
+                    <span class="stat-number">101</span>
+                    <span class="stat-label">Stories</span>
                 </div>
                 <div class="stat-card reveal">
                     <span class="stat-number">21</span>
