@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Älg – Learn Swedish from Your Own Language · SFI &amp; Life in Sweden</title>
 
+    <meta name="description" content="Learn Swedish from your own language — 21 to choose from. Free, no ads. 4,000+ words, 101 audio stories and native voices for SFI and life in Sweden.">
+    <link rel="canonical" href="https://antonovdmitriy.github.io/algapp/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Älg">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://antonovdmitriy.github.io/algapp/">
     <meta property="og:title" content="Älg – Learn Swedish from Your Own Language">
     <meta property="og:description" content="Learn Swedish from your own language — 21 to choose from. Free, no ads. 4,000+ words, 101 audio stories and native voices for SFI and life in Sweden.">
-    <meta property="og:image" content="https://antonovdmitriy.github.io/algapp/image.png">
+    <meta property="og:image" content="https://antonovdmitriy.github.io/algapp/images/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Älg app: learn Swedish from your own language. 21 languages, free, no ads.">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://antonovdmitriy.github.io/algapp/">
-    <meta property="twitter:title" content="Älg – Learn Swedish from Your Own Language">
-    <meta property="twitter:description" content="Learn Swedish from your own language — 21 to choose from. Free, no ads. 4,000+ words, 101 audio stories and native voices for SFI and life in Sweden.">
-    <meta property="twitter:image" content="https://antonovdmitriy.github.io/algapp/image.png">
-
-    <!-- Meta Description -->
-    <meta name="description" content="Learn Swedish from your own language — 21 to choose from. Free, no ads. 4,000+ words, 101 audio stories and native voices for SFI and life in Sweden.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Älg – Learn Swedish from Your Own Language">
+    <meta name="twitter:description" content="Learn Swedish from your own language — 21 to choose from. Free, no ads. 4,000+ words, 101 audio stories and native voices for SFI and life in Sweden.">
+    <meta name="twitter:image" content="https://antonovdmitriy.github.io/algapp/images/og-cover.jpg">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
@@ -199,6 +203,14 @@
             margin-bottom: 50px;
             font-weight: 300;
             line-height: 1.4;
+        }
+
+        .hero-tagline {
+            font-size: 1.2em;
+            color: rgba(255, 255, 255, 0.6);
+            margin: -30px auto 50px;
+            max-width: 640px;
+            line-height: 1.6;
         }
 
         .hero-subtitle span {
@@ -386,6 +398,56 @@
             box-shadow:
                 0 40px 80px rgba(102, 126, 234, 0.4),
                 0 0 0 1px rgba(102, 126, 234, 0.5);
+        }
+
+        /* Life in Sweden Section */
+        .sweden-section {
+            padding: 150px 20px 0;
+            background: #1a1a2e;
+        }
+
+        .founder-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 50px 45px;
+            position: relative;
+        }
+
+        .founder-card::before {
+            content: '"';
+            position: absolute;
+            top: 15px;
+            left: 30px;
+            font-size: 6em;
+            color: rgba(255, 255, 255, 0.08);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .founder-quote {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25em;
+            line-height: 1.8;
+            position: relative;
+        }
+
+        .founder-quote + .founder-quote {
+            margin-top: 20px;
+        }
+
+        .founder-name {
+            margin-top: 30px;
+            color: var(--accent-cyan);
+            font-weight: 700;
+        }
+
+        .founder-name span {
+            display: block;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 500;
+            font-size: 0.9em;
+            margin-top: 4px;
         }
 
         /* Stories Section */
@@ -762,6 +824,67 @@
             font-size: 0.9em;
         }
 
+        /* FAQ Section */
+        .faq-section {
+            padding: 150px 20px;
+            background: #1a1a2e;
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            transition: border-color 0.3s ease;
+        }
+
+        .faq-item[open] {
+            border-color: rgba(102, 126, 234, 0.4);
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            padding: 26px 60px 26px 30px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent-cyan);
+            font-size: 1.4em;
+            font-weight: 400;
+        }
+
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+
+        .faq-item p {
+            padding: 0 30px 28px;
+            color: rgba(255, 255, 255, 0.65);
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
         /* Final CTA - Bold */
         .final-cta {
             padding: 180px 20px;
@@ -880,6 +1003,9 @@
             .gallery-item { width: 280px; }
             .stories-layout { grid-template-columns: 1fr; gap: 60px; }
             .stories-phones img:nth-child(2) { margin-top: 40px; }
+            .hero-tagline { font-size: 1.05em; margin-top: -30px; }
+            .founder-card { padding: 45px 28px 35px; }
+            .founder-quote { font-size: 1.1em; }
         }
 
         /* Scroll Reveal */
@@ -894,6 +1020,79 @@
             transform: translateY(0);
         }
     </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "MobileApplication",
+            "name": "Älg – Learn Swedish Words",
+            "operatingSystem": "iOS 17.0 or later",
+            "applicationCategory": "EducationalApplication",
+            "url": "https://antonovdmitriy.github.io/algapp/",
+            "installUrl": "https://apps.apple.com/se/app/%C3%A4lg-learn-swedish-words/id6746169818",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "SEK"
+            }
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Is Älg free?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Älg is free to download and has no ads. All words, stories, audio, games and spaced review are free to use."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Which languages can I learn Swedish from?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Translations of every word and example are available in 21 languages: Arabic, Belarusian, Chinese, English, Estonian, Finnish, French, German, Hindi, Indonesian, Italian, Latvian, Lithuanian, Persian, Polish, Russian, Serbian, Somali, Spanish, Turkish and Ukrainian. The app's menus are translated into 14 of them. With Belarusian, Estonian, Latvian, Lithuanian, Persian, Serbian and Somali you see translations in your language and menus in English."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does Älg help with SFI?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Älg is not an official SFI course, but it is made for the same goal: Swedish for everyday life in Sweden. Practise the words from your lessons, listen to native voices and read short stories at your level, from A1 to C1."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need an account?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. Everything works without an account. A free account backs up your progress, syncs it between devices and unlocks Älg AI."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does it work offline?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Words, translations and stories are stored on your phone. Audio downloads the first time you play it and then stays on your device, so a word you have listened to once also plays without internet."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is there an Android or iPad version?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Älg is made for iPhone and needs iOS 17 or later. There is no Android version yet."
+                    }
+                }
+            ]
+        }
+    ]
+}
+    </script>
 </head>
 <body>
     <!-- Hero Section -->
@@ -912,7 +1111,8 @@
             </div>
 
             <h1>Älg</h1>
-            <p class="hero-subtitle">Master Swedish vocabulary <span>naturally</span>, at your own pace</p>
+            <p class="hero-subtitle">Learn Swedish <span>from your own language</span></p>
+            <p class="hero-tagline">For SFI and everyday life in Sweden. 21 languages, native Swedish voices, at your own pace.</p>
 
             <a href="https://apps.apple.com/se/app/%C3%A4lg-learn-swedish-words/id6746169818?l=en-GB" class="btn-app-store">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store">
@@ -921,12 +1121,12 @@
 
             <div class="hero-stats">
                 <div class="hero-stat">
-                    <span class="hero-stat-number">4,286</span>
+                    <span class="hero-stat-number">4,339</span>
                     <span class="hero-stat-label">Swedish Words</span>
                 </div>
                 <div class="hero-stat">
-                    <span class="hero-stat-number">6</span>
-                    <span class="hero-stat-label">Voices</span>
+                    <span class="hero-stat-number">101</span>
+                    <span class="hero-stat-label">Audio Stories</span>
                 </div>
                 <div class="hero-stat">
                     <span class="hero-stat-number">21</span>
@@ -987,6 +1187,49 @@
                         <img src="images/09_profile.png" alt="Profile &amp; Progress">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life in Sweden Section -->
+    <section class="sweden-section" id="sfi">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Made for Life in Sweden</div>
+                <h2 class="section-title">Your Language.<br>Your Pace.</h2>
+                <p class="section-description">Whether you have just started SFI or need Swedish for work, Älg meets you in the language you already know.</p>
+            </div>
+
+            <div class="stories-layout">
+                <div class="founder-card reveal">
+                    <p class="founder-quote">When I moved to Sweden, I went through SFI myself. I looked for an app to practise words in between lessons and couldn't find a calm one — without ads, without pressure and without tricks to keep me hooked.</p>
+                    <p class="founder-quote">So I started building Älg in my spare time. I still make it on my own.</p>
+                    <p class="founder-name">Dmitrii<span>Creator of Älg</span></p>
+                </div>
+
+                <ul class="stories-steps reveal">
+                    <li>
+                        <div class="stories-step-icon">🌍</div>
+                        <div>
+                            <h3>Start from your own language</h3>
+                            <p>Every word and example is translated into 21 languages, from Arabic, Persian and Somali to Ukrainian and English. The app's menus are translated into 14 of them.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stories-step-icon">🏠</div>
+                        <div>
+                            <h3>Words you actually need here</h3>
+                            <p>Work, documents, health, home, shopping and Swedish holidays — 68 topics from everyday life, with real example sentences for each word.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="stories-step-icon">📈</div>
+                        <div>
+                            <h3>Grows with you</h3>
+                            <p>Words and stories are sorted by level from A1 to C1, so Älg is useful from your first SFI lesson to long after the course is over.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -1069,21 +1312,21 @@
                 </div>
 
                 <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">🎧</div>
+                    <h3>Learn On the Go</h3>
+                    <p>Player mode reads example sentences aloud one after another, with pauses to repeat. Keep listening with the screen locked — on the bus, on a walk or on your way to SFI.</p>
+                </div>
+
+                <div class="feature-card reveal">
+                    <div class="feature-icon-wrapper">🔎</div>
+                    <h3>Dictionary &amp; Word Cards</h3>
+                    <p>Search every word in the app. Each card shows the translation in your language, all grammatical forms, example sentences with audio and, where available, a picture.</p>
+                </div>
+
+                <div class="feature-card reveal">
                     <div class="feature-icon-wrapper">🎮</div>
-                    <h3>Three Engaging Games</h3>
-                    <p>Word Matching, Article Challenge (en/ett), and Snake. Gamification done right - fun without pressure or manipulation.</p>
-                </div>
-
-                <div class="feature-card reveal">
-                    <div class="feature-icon-wrapper">📚</div>
-                    <h3>Comprehensive Content</h3>
-                    <p>44,660 example sentences. Learn words in context across all CEFR levels from A1 to C1.</p>
-                </div>
-
-                <div class="feature-card reveal">
-                    <div class="feature-icon-wrapper">🌍</div>
-                    <h3>21 Languages</h3>
-                    <p>Full translation support in 21 languages. Learn Swedish from your native language.</p>
+                    <h3>Games Without Pressure</h3>
+                    <p>Word Matching, the en/ett article challenge and Word Snake. Gamification done right — fun without pressure or manipulation.</p>
                 </div>
 
                 <div class="feature-card reveal">
@@ -1142,15 +1385,15 @@
 
             <div class="stats-grid">
                 <div class="stat-card reveal">
-                    <span class="stat-number">4,286</span>
+                    <span class="stat-number">4,339</span>
                     <span class="stat-label">Swedish Words</span>
                 </div>
                 <div class="stat-card reveal">
-                    <span class="stat-number">67</span>
+                    <span class="stat-number">68</span>
                     <span class="stat-label">Categories</span>
                 </div>
                 <div class="stat-card reveal">
-                    <span class="stat-number">44,660</span>
+                    <span class="stat-number">45,190</span>
                     <span class="stat-label">Examples</span>
                 </div>
                 <div class="stat-card reveal">
@@ -1277,6 +1520,43 @@
                     <div class="language-name">Ukrainian</div>
                     <div class="language-native">Українська</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">FAQ</div>
+                <h2 class="section-title" style="color: white;">Questions &amp; Answers</h2>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item reveal">
+                    <summary>Is Älg free?</summary>
+                    <p>Yes. Älg is free to download and has no ads. All words, stories, audio, games and spaced review are free to use.</p>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>Which languages can I learn Swedish from?</summary>
+                    <p>Translations of every word and example are available in 21 languages: Arabic, Belarusian, Chinese, English, Estonian, Finnish, French, German, Hindi, Indonesian, Italian, Latvian, Lithuanian, Persian, Polish, Russian, Serbian, Somali, Spanish, Turkish and Ukrainian. The app's menus are translated into 14 of them. With Belarusian, Estonian, Latvian, Lithuanian, Persian, Serbian and Somali you see translations in your language and menus in English.</p>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>Does Älg help with SFI?</summary>
+                    <p>Älg is not an official SFI course, but it is made for the same goal: Swedish for everyday life in Sweden. Practise the words from your lessons, listen to native voices and read short stories at your level, from A1 to C1.</p>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>Do I need an account?</summary>
+                    <p>No. Everything works without an account. A free account backs up your progress, syncs it between devices and unlocks Älg AI.</p>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>Does it work offline?</summary>
+                    <p>Words, translations and stories are stored on your phone. Audio downloads the first time you play it and then stays on your device, so a word you have listened to once also plays without internet.</p>
+                </details>
+                <details class="faq-item reveal">
+                    <summary>Is there an Android or iPad version?</summary>
+                    <p>Älg is made for iPhone and needs iOS 17 or later. There is no Android version yet.</p>
+                </details>
             </div>
         </div>
     </section>
