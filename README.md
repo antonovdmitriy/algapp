@@ -60,6 +60,17 @@
 - **100% Audio**: All words have pronunciation audio
 
 
+## 🌐 Website
+
+The site is plain static HTML served by GitHub Pages, with no build step:
+
+- `index.html` — English page
+- `sv/index.html` — Swedish page (`/sv/`)
+- `styles.css`, `script.js` — shared by both pages
+
+The pages mirror each other section by section. When you change a text or a number
+in one, change it in the other too.
+
 ## 📞 Support & Contact
 
 For questions, feedback, or issues:
