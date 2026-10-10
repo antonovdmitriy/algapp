@@ -52,9 +52,13 @@ when you start it. We do not receive or store the recordings.
 
 ## Deleting your data
 
-To delete your account and the progress stored with it, write to the address below
-from the e-mail of your account. Data stored on the device is removed when you delete
-the app.
+You can delete your account in the app: open the Profile tab, tap your avatar and choose
+**Delete Account**. The account and the progress stored with it are removed from our
+servers right away and cannot be restored. Progress kept on the device stays there until
+you delete the app.
+
+If you cannot use the app, write to the address below from the e-mail of your account
+and we will delete it for you.
 
 ## Contact
 
