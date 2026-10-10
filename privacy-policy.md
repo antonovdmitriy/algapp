@@ -7,4 +7,4 @@
 - No third-party services are integrated that collect personal data.
 
 If you have any questions, please contact us at:  
-📧 antonov.sverige@gmail.com
+📧 algswedish@gmail.com
