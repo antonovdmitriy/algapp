@@ -90,7 +90,7 @@ of the opened file, so the Swedish page shows up as unstyled text on white.
 
 For questions, feedback, or issues:
 
-📧 **antonov.sverige@gmail.com**  
+📧 **algswedish@gmail.com**  
 *We usually respond within 24 hours.*
 
 ---
