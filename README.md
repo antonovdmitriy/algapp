@@ -60,6 +60,32 @@
 - **100% Audio**: All words have pronunciation audio
 
 
+## 🌐 Website
+
+The site is plain static HTML served by GitHub Pages, with no build step:
+
+- `index.html` — English page
+- `sv/index.html` — Swedish page (`/sv/`)
+- `styles.css`, `script.js` — shared by both pages
+
+The pages mirror each other section by section. When you change a text or a number
+in one, change it in the other too.
+
+### Local preview
+
+Serve the folder over HTTP instead of opening the files directly:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then open <http://localhost:8000/> and <http://localhost:8000/sv/>.
+
+Opened as `file://`, the site looks broken even though it is not: the language
+switch points at the `sv/` folder, which only a web server resolves to
+`sv/index.html`, and Safari refuses to load `../styles.css` from outside the folder
+of the opened file, so the Swedish page shows up as unstyled text on white.
+
 ## 📞 Support & Contact
 
 For questions, feedback, or issues:
