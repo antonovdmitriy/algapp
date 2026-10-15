@@ -54,8 +54,13 @@ when you start it. We do not receive or store the recordings.
 
 You can delete your account in the app: open the Profile tab, tap your avatar and choose
 **Delete Account**. The account and the progress stored with it are removed from our
-servers right away and cannot be restored. Progress kept on the device stays there until
-you delete the app.
+servers right away and cannot be restored. In rare cases Microsoft, which runs our
+sign-in, keeps the deleted account for up to 30 days before erasing it for good; it is
+not used during that time. Progress kept on the device stays there until you delete the
+app.
+
+If you signed in with Apple, you can also stop using Sign in with Apple for Älg in your
+Apple Account settings.
 
 If you cannot use the app, write to the address below from the e-mail of your account
 and we will delete it for you.
